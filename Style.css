@@ -1,0 +1,291 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	background-color: white;
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+}
+p{
+	z-index: 10000;
+	font-size: 100px;
+	text-align: center;
+	position: absolute;
+	width: 20px;
+	padding-top:100px;
+	color: white;
+	font-family: 'lato'; 
+  
+}
+.Slider{
+	overflow: hidden;
+	height: 200px;
+}
+.Slider figure div{
+	width:20%;
+	float: left; 
+}
+.Slider figure img{
+	width: 100%;
+	float: left;
+	
+}
+.Slider figure{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 50s slidy infinite;
+}
+
+@keyframes slidy{
+	0%{
+		left:0;
+	}
+	10%{
+		left:0;
+	}
+	12%{
+		left:-100%;
+	}
+	22%{
+		left:-100%;
+	}
+	24%{
+		left:-200%;
+	}
+	
+	34%{
+		left:-200%;
+	}
+	36%{
+		left: -200%
+	}
+	46%{
+		left:-300; 
+	}
+	48%{
+       left: -400%;
+	}
+	58%{
+       left: -400%;
+	}
+	60%{
+        left: -300%;
+	}
+	70%{
+		left: -300%
+	}
+	72%{
+		left: -200%;
+	}
+	82%{
+		left: -200%;
+	}
+	84%{
+		left: -100%;
+	}
+	94%{
+		left:-100%;
+	}
+	96%{
+		left: 0%;
+	}
+
+
+}
+
+
+.menu-bar{
+	background-color:black;
+	text-align: center;
+	list-style-position: fixed;
+}
+
+.logo img{
+	position: absolute;
+	margin-top: 0px;
+	margin-left:10px;
+}
+/**.image img{
+position: absolute;
+margin-top: 13%;
+width: 100%;
+height: 55%;
+border: 1px solid black;**/
+
+
+
+.menu-bar ul{
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+
+.menu-bar ul li{
+	width: 120px;
+	margin: 15px;
+	padding: 15px;
+}
+
+.menu-bar ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.active,.menu-bar ul li :hover{
+	background:gray;
+	border-radius: 3px;
+	padding: 15px;
+}
+.btn{
+	color: purple;
+	background-color: skyblue;
+
+}
+
+.sub-menu-1{
+	display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+	display: block;
+	position: absolute;
+	margin-top: 5px;
+	margin-left: -5px;
+	background:black;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+	display: block;
+	margin-width:10px;
+	padding: 15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+	width: 100px;
+	padding: 1px;
+	border-bottom: 1px dotted #fff;
+	background:transparent;
+	border-radius: 2;
+	border-margin: 5px;
+	text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+	border-bottom: none;
+}
+.shop-item{
+	display: inline-block;
+	margin: 10px;
+}
+.container content-section{
+	width: 80%;
+	margin:0 auto;
+	font-size: 20px;
+}
+.container content-section h2{
+	position: absolute;
+}
+.cart-row span{
+	display: block;
+	float: left;
+	margin: 11px;
+}
+.cart-total span{
+	display: Block;
+}
+.cart-total button{
+	position: relative;
+
+	
+}
+.set{
+	font-style: oblique;
+	font-variant: small-caps;
+	background-color: lightgrey;
+	width: 100%;
+	padding: 5px;
+	border: 10px solid navy;
+	margin-top : 25%;
+	margin-left: %;
+	text-align: center ;
+	font-size:100%;
+	color: blue;
+}
+.cart-total{
+	font-style: oblique;
+	font-variant: small-caps;
+	background-color: lightgrey;
+	width: 50%;
+	padding: 5px;
+	border: 25px solid navy;
+	margin : 15%;
+	margin-left: 25%;
+	text-align: center ;
+	font-size:100%;
+	color: blue;	
+}
+.cart-row{
+	font-style: oblique;
+	font-variant: small-caps;
+	background-color: lightgrey;
+	width: 50%;
+	padding: 30px;
+	border: 25px solid navy;
+	margin : 10%;
+	margin-left: 25%;
+	text-align: center ;
+	font-size:100%;
+	color: blue;
+}
+.head {
+	font-style: oblique;
+	font-variant: small-caps;
+	background-color: lightgrey;
+	width: 50%;
+	padding: 30px;
+	border: 25px solid navy;
+	margin : 10%;
+	margin-left: 25%;
+	text-align: center ;
+	font-size:100%;
+	color: blue;
+}
+
+div.image{
+	margin:15px;
+	border: 1px solid #ccc;
+	float:left;
+	width:180px;
+	margin-left: 5%;
+}
+div.image.img{
+
+	width:100%
+	height:auto;
+}
+div.desc{
+	
+	text-align: center;
+}
+.content {
+	font-style: oblique;
+	font-variant: small-caps;
+	background-color: lightgrey;
+	width: 90%;
+	padding: 30px;
+	border :
+	margin : %;
+	margin-left: 5%;
+	text-align: center ;
+	font-size:100%;
+	color: blue;
+
+
+}
